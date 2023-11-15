@@ -1,18 +1,19 @@
 // React
-import { useState, useEffect } from 'react'
+// Composant heure
+import { useState, useEffect } from "react";
 
 export default function LiveClock() {
-  const [time, setTime] = useState(new Date())
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     setInterval(() => {
-      setTime(new Date())
-    }, 1000)
-  }, [])
+      setTime(new Date());
+    }, 1000);
+  }, []);
 
   return (
     <div className="liveClock">
       <div>{time.toLocaleTimeString()}</div>
     </div>
-  )
+  );
 }

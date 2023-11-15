@@ -1,7 +1,9 @@
 // Mui conponenets
-import { TextField } from '@mui/material'
+import { TextField } from "@mui/material";
 
+// Composant InputTextField qui encapsule la composante TextField de MUI
 export default function InputTextField(props) {
+  // Destructuration des propriétés (props) passées au composant
   const {
     isError,
     autoFocus,
@@ -17,11 +19,13 @@ export default function InputTextField(props) {
     errorName,
     errorLabel,
     errorHelperText,
-  } = props
+  } = props;
 
+  // Rendu conditionnel basé sur la présence d'une erreur
   return (
     <div>
       {isError ? (
+        // Si une erreur est présente, rend un TextField avec l'attribut error activé
         <TextField
           error
           fullWidth
@@ -35,6 +39,7 @@ export default function InputTextField(props) {
           value={value}
         />
       ) : (
+        // Si aucune erreur n'est présente, rend un TextField standard
         <TextField
           fullWidth
           autoFocus={autoFocus}
@@ -51,5 +56,5 @@ export default function InputTextField(props) {
         />
       )}
     </div>
-  )
+  );
 }
