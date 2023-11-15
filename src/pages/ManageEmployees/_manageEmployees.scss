@@ -1,0 +1,39 @@
+.manageEmployees {
+  &__banner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    border-bottom: 1px solid teal;
+    &--title {
+      font-size: 40px;
+      font-weight: 700;
+      color: teal;
+    }
+  }
+  &__container {
+    width: 100%;
+  }
+  &__search {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    &--box {
+      display: flex;
+      gap: 10px;
+    }
+  }
+  &__table {
+    width: 90%;
+    margin: 100px auto 0px;
+    position: relative;
+    &--bg {
+      background-color: rgba(255, 228, 196, 0.3);
+    }
+    &--action {
+      margin: 0px 5px;
+    }
+  }
+}

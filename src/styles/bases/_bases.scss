@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  //max-width: 1440px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  background: url(../../assets/pexels-fabien-burgue-2029968-3.jpg);
+  /* Full height */
+  margin: auto;
+  // height: 100vh;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.layout__header {
+  width: 100%;
+}
